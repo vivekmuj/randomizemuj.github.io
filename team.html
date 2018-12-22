@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team</title>
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<style>
+	html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Roboto', sans-serif !important;
+}
+
+body {
+      background: url(glitch.gif) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+		.our-team{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20%;
+}
+.our-team img{
+    width: 100%;
+    height: auto;
+
+}
+.our-team .team-content{
+    width: 100%;
+    background: #263238;
+    color: #fff;
+    padding: 15px 0 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.our-team:hover .team-content{
+    padding-bottom: 40px;
+}
+.our-team .team-content:before,
+.our-team .team-content:after{
+    content: "";
+    width: 60%;
+    height: 38px;
+    background: #263238;
+    position: absolute;
+    top: -18px;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+.our-team .team-content:before{
+    left: -3%;
+}
+.our-team .team-content:after{
+    right: -3%;
+    transform: rotate(-15deg);
+}
+.our-team .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 7px 0;
+    position: relative;
+}
+.our-team .title:before,
+.our-team .title:after{
+    content: "";
+    width: 7px;
+    height: 93px;
+    background: 	#7CFC00;;
+    position: absolute;
+    top: -78px;
+    z-index: -2;
+    transform: rotate(-74deg);
+}
+.our-team .title:before{
+    left: 32%;
+}
+.our-team .title:after{
+    right: 32%;
+    transform: rotate(74deg);
+}
+.our-team .post{
+    display: block;
+    font-size: 13px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.our-team .social-links{
+    list-style: none;
+    padding: 0 0 15px 0;
+    margin: 0;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social-links{
+    bottom: 0;
+}
+.our-team .social-links li{
+    display: inline-block;
+}
+.our-team .social-links li a{
+    display: block;
+    font-size: 16px;
+    color: #aad6e1;
+    margin-right: 6px;
+    transition: all 0.5s ease 0s;
+}
+.our-team .social-links li:last-child a{
+    margin-right: 0;
+}
+.our-team .social-links li a:hover{
+    color: #ff5543;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+    .our-team .team-content:before,
+    .our-team .team-content:after{
+        height: 70px;
+        top: -24px;
+    }
+    .our-team .title:before,
+    .our-team .title:after{
+        top: -85px;
+        height: 102px;
+    }
+    .our-team .title:before{
+        left: 35%;
+    }
+    .our-team .title:after{
+        right: 35%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .our-team .team-content:before,
+    .our-team .team-content:after{
+        height: 75px;
+    }
+    .our-team .team-content:before{
+        transform: rotate(8deg);
+    }
+    .our-team .team-content:after{
+        transform: rotate(-8deg);
+    }
+    .our-team .title:before,
+    .our-team .title:after{
+        width: 10px;
+        top: -78px;
+        height: 102px;
+    }
+    .our-team .title:before{
+        left: 42.5%;
+        transform: rotate(-82deg);
+    }
+    .our-team .title:after{
+        right: 42.5%;
+        transform: rotate(82deg);
+    }
+}
+@media only screen and (max-width: 480px){
+    .our-team .title:before,
+    .our-team .title:after{
+        top: -83px;
+    }
+}
+	</style>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <img src="images/shlok.jpg" alt="">
+                <div class="team-content">
+                    <h3 class="title">Son</h3>
+                    <span class="post">web developer</span>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <img src="images/ankit.jpg" alt="">
+                <div class="team-content">
+                    <h3 class="title">Dad</h3>
+                    <span class="post">Web Designer</span>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>randomize(); - Landing</title>
+      <title>RANDOMIZE(); - Home</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 
       <!-- stylesheet -->
@@ -26,7 +26,7 @@
 <body>
 
       <div class="overlay">
-            <h1>randomize(); MUJ</h1>
+            <h1>RANDOMIZE(); MUJ</h1>
       </div>
 
       <div class="wrapper">
@@ -34,7 +34,7 @@
             <div class="nav">
                   <ul>
                         <li>Home</li>
-                        <li>Team</li>
+                        <li><a href="team.html">Team</a></li>
                         <li>Events</li>
                         <li>Gallery</li>
                   </ul>
@@ -50,25 +50,31 @@
                   <span>RANDOMIZE();</span>
             </div>
             <div class="header">
-                  <h1>Welcome to <br> Randomize(); </h1>
-                  <p>Randomize(); is a student club of Manipal University, Jaipur. We draw Computer Science  maiores aspernatur delectus. Id et, quos ab illo laboriosam reiciendis?</p>
-                  <button>Our Team</button>
+                  <h1>Welcome to <br> Randomize( ); </h1><br>
+                  <p>Randomize(); is one of the biggest faculty backed students club in Jaipur. We attract 
+                  computer science majors and give them a platform to showcase their skills, knowledge and interest in the 
+                  booming field of computer science. We conduct a plethora of activities throughout the academic year ranging
+                  from tech talks, seminars and hackathons.</p>
+                  <button><a href="team.html" style="text-decoration: none;">Our Team</a></button>
             </div>
             <div class="bottom-bar">
                   <div class="container">
                         <div class="row">
-                              <div class="col-lg-4">
-                                    <h6>Lorem ipsum dolor sit.</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam labore repellendus necessitatibus ipsa!</p>
+                              <div class="col-lg-6">
+                                    <h6 style="color: #76ff03;">Initialize();</h6>
+                                    <p>The inaugral event for the club will take place on 7th January 2019
+                                    in the presence of esteemed guests, faculty, registrar ma'am and VC sir.
+                                    <br>
+                              <a href="event.html">Learn more.</a></p>
                               </div>
-                              <div class="col-lg-4">
-                                    <h6>Lorem ipsum dolor sit.</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam labore repellendus necessitatibus ipsa!</p>
+                              <div class="col-lg-6">
+                                    <h6 style="color: #76ff03;">SFPC: A project portal</h6>
+                                    <p>A project portal, through which we aim to connect teachers and students
+                                    so that they can solve problems together.
+                                    <br>
+                                    <a href="event.html">Learn more.</a></p>
                               </div>
-                              <div class="col-lg-4">
-                                    <h6>Lorem ipsum dolor sit.</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam labore repellendus necessitatibus ipsa!</p>
-                              </div>
+                             
                         </div>
                   </div>
             </div>
@@ -85,22 +91,22 @@
       TweenMax.to(".overlay", 3, {
             delay: 1,
             top: "-100%",
-            ease: Expo.easeInOut
+            ease: Elastic.easeInOut
       })
 
       TweenMax.from(".logo", 1, {
             delay: 2.4,
             opacity: 0,
-            y: 20,
+            y: 100,
             ease: Expo.easeInOut
       })
 
       TweenMax.staggerFrom(".nav ul li", 1, {
-            delay: 3.0  , opacity: 0, y: 30, ease: Expo.easeInOut
+            delay: 3.0  , opacity: 0, x: 50, ease: Expo.easeOut
       }, 0.2)
 
       TweenMax.staggerFrom(".social-media ul li", 1, {
-            delay: 2.4, opacity: 0, y: 30, ease: Expo.easeInOut
+            delay: 2.4, opacity: 0, x: 50, ease: Expo.easeInOut
       }, 0.2)
 
       TweenMax.from(".side-strip", 3, {
@@ -134,21 +140,21 @@
       TweenMax.from(".header h1", 2, {
             delay: 3.2,
             opacity: 0,
-            y: 20,
+            y: 50,
             ease: Expo.easeInOut
       })
 
       TweenMax.from(".header p", 2, {
             delay: 3.4,
             opacity: 0,
-            y: 20,
+            x: 50,
             ease: Expo.easeInOut
       })
 
       TweenMax.from(".header button", 2, {
             delay: 3.6,
             opacity: 0,
-            y: 20,
+            x: 50,
             ease: Expo.easeInOut
       })
       </script>
