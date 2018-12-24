@@ -2,16 +2,24 @@
 <html>
 <head>
 	<title>Team</title>
-	 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
 
 <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-	<style>
-	html, body {
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  -->
+  
+<!-- stylesheet -->
+<link rel="stylesheet" href="main.css">
+    
+<style>
+
+html, body {
       margin: 0;
       padding: 0;
       width: 100%;
@@ -20,11 +28,11 @@
 }
 
 body {
-      background: url(glitch.gif) no-repeat 50% 50%;
+      background-color: black !important;
       background-size: cover;
 }
 
-		.our-team{
+.our-team{
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -127,6 +135,22 @@ body {
 .our-team .social-links li a:hover{
     color: #ff5543;
 }
+.title{
+    position: absolute;
+    top: 10%;
+
+}
+.title h1{
+    color: #76ff03;
+    font-weight: bolder;
+}
+.row{
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    right: 5%;
+}
+
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
     .our-team .team-content:before,
@@ -146,6 +170,7 @@ body {
         right: 35%;
     }
 }
+
 @media only screen and (max-width: 767px){
     .our-team .team-content:before,
     .our-team .team-content:after{
@@ -178,14 +203,32 @@ body {
         top: -83px;
     }
 }
-	</style>
+</style>
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+
+<div class="wrapper">
+            <div class="logo">RANDOMIZE();</div>
+            <div class="nav">
+                  <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Team</li>
+                        <li>Events</li>
+                        <li>Gallery</li>
+                  </ul>
+            </div>
+</div>
+
+
 <div class="container">
+    <div class="title">
+        <h1>Our team</h1>
+    </div>
     <div class="row">
-        <div class="col-md-3 col-sm-6">
+
+        <div class="col-md-3 col-sm-6 col-lg-4">
             <div class="our-team">
                 <img src="images/shlok.jpg" alt="">
                 <div class="team-content">
@@ -202,7 +245,7 @@ body {
             </div>
         </div>
  
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 col-lg-4">
             <div class="our-team">
                 <img src="images/ankit.jpg" alt="">
                 <div class="team-content">
@@ -218,6 +261,58 @@ body {
                 </div>
             </div>
         </div>
+
+        <div class="col-md-3 col-sm-6 col-lg-4">
+            <div class="our-team">
+                <img src="images/vaibhav.jpg" alt="">
+                <div class="team-content">
+                    <h3 class="title">Dad</h3>
+                    <span class="post">Web Designer</span>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-lg-4">
+            <div class="our-team">
+                <img src="images/ankit.jpg" alt="">
+                <div class="team-content">
+                    <h3 class="title">Dad</h3>
+                    <span class="post">Web Designer</span>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-lg-4">
+            <div class="our-team">
+                <img src="images/ankit.jpg" alt="">
+                <div class="team-content">
+                    <h3 class="title">Dad</h3>
+                    <span class="post">Web Designer</span>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 </body>

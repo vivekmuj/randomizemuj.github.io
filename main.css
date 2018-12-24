@@ -7,8 +7,9 @@ html, body {
 }
 
 body {
-      background: url(glitch.gif) no-repeat 50% 50%;
+      background-color: black !important;
       background-size: cover;
+      overflow-x: hidden;
 }
 
 .logo {
@@ -88,16 +89,16 @@ body {
 .bottom-bar {
       color: #fff;
       position: absolute;
-      bottom: 0px;
+      bottom: 80px;
       left: 0;
       right: 0;
 }
 
 .row {
-      padding: 2.6em 2.6em 2em 2.6em;
-      background-image: linear-gradient(#000000, #434343);
+      /* padding: 2.6em 2.6em 2em 2.6em; */
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
+      left: 60%;
 }
 
 .bottom-bar h6 {
