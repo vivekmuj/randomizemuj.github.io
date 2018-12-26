@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-      background-color: black !important;
+      background-image: url("glitch.gif") !important;
       background-size: cover;
       overflow-x: hidden;
 }
@@ -129,4 +129,43 @@ body {
       font-weight: bolder;
       letter-spacing: 15px;
       color: #76ff03;
+}
+
+@media only screen and (max-width: 900px){
+      .logo{
+            display: none;
+      }
+      .header{
+            top: 32%;
+            width: 100%;
+            left: 60%;
+      }
+      .header p{
+            margin-right: 12%; 
+      }
+      span{
+            display: none;
+      }
+      #initialize{
+            /* background-color: orange; */
+            top: 3.5em;
+            left: 1.7em;
+      }
+      #sfpc{
+            top: 4em;
+            left: 1.7em;
+      }
+      .social-media ul{
+            padding-left: 0.5em;
+      }
+      .nav{
+            margin: 0px;
+            /* background-color: orange; */
+            padding: 0px;
+            left: 0px;
+            top: 5px;
+      }
+      .header button{
+            margin-top: 2px;
+      }
 }
