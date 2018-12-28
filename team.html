@@ -1,350 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Team</title>
     
+    <title>Team</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     
     <!-- stylesheet -->
-    <!-- <link rel="stylesheet" href="team.css"> -->
-    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="team.css">
 
-<style>
-
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("glitch.gif");
-    font-family: 'Roboto', sans-serif !important;
-    background-size: cover;
-}
-
-.nav {
-    line-height: 40px;
-    margin: 1.2em;
-    position: absolute;
-    right: 0;
-}
-
-.nav ul li {
-    list-style: none;
-    display: inline-block;
-    color: #fff;
-    padding-right: 36px;
-    font-weight: bold;
-}
-
-.logo {
-    line-height: 40px;
-    float: left;
-    margin: 1.2em 0 0 2.2em;
-    font-weight: bolder;
-    color: #fff;
-    letter-spacing: 12px;
-}
-
-.our-team{
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  margin-top: 20%;
-}
-.our-team img{
-  width: 100%;
-  height: 50%;
-
-}
-.our-team .team-content{
-  width: 100%;
-  background: #263238;
-  color: #fff;
-  padding: 15px 0 10px 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  transition: all 0.3s ease 0s;
-}
-.our-team:hover .team-content{
-  padding-bottom: 40px;
-}
-.our-team .team-content:before,
-.our-team .team-content:after{
-  content: "";
-  width: 60%;
-  height: 58px;
-  background: #263238;
-  position: absolute;
-  top: -18px;
-  transform: rotate(15deg);
-  z-index: -1;
-}
-.our-team .team-content:before{
-  left: -3%;
-}
-.our-team .team-content:after{
-  right: -3%;
-  transform: rotate(-15deg);
-}
-.our-team .title{
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin: 0 0 7px 0;
-  position: relative;
-}
-.our-team .title:before,
-.our-team .title:after{
-  content: "";
-  width: 7px;
-  height: 93px;
-  background: 	#7CFC00;;
-  position: absolute;
-  top: -78px;
-  z-index: -2;
-  transform: rotate(-74deg);
-}
-.our-team .title:before{
-  left: 32%;
-}
-.our-team .title:after{
-  right: 32%;
-  transform: rotate(74deg);
-}
-.our-team .post{
-  display: block;
-  font-size: 13px;
-  text-transform: capitalize;
-  margin-bottom: 8px;
-}
-.our-team .social-links{
-  list-style: none;
-  padding: 0 0 15px 0;
-  margin: 0;
-  position: absolute;
-  bottom: -40px;
-  right: 0;
-  left: 0;
-  transition: all 0.5s ease 0s;
-}
-.our-team:hover .social-links{
-  bottom: 0;
-}
-.our-team .social-links li{
-  display: inline-block;
-}
-.our-team .social-links li a{
-  display: block;
-  font-size: 16px;
-  color: #aad6e1;
-  margin-right: 6px;
-  transition: all 0.5s ease 0s;
-}
-.our-team .social-links li:last-child a{
-  margin-right: 0;
-}
-.our-team .social-links li a:hover{
-  color: #ff5543;
-}
-.title{
-  position: absolute;
-  top: 10%;
-
-}
-.title h1{
-  color: #76ff03;
-  font-weight: bolder;
-}
-.row{
-  left: 10%;
-  top: 15%;
-  right: 5%;
-}
-
-@media only screen and (max-width: 900px){
-  .logo{
-      display: none !important;
-  }
-  .row{
-      margin-right: 0px;
-  }
-}
-/* @media only screen and (max-width: 900px){
-  .our-team{ 
-      margin-bottom: 30px; 
-  }
-  .our-team .team-content:before,
-  .our-team .team-content:after{
-      height: 70px;
-      top: -24px;
-  }
-  .our-team .title:before,
-  .our-team .title:after{
-      top: -85px;
-      height: 102px;
-  }
-  .our-team .title:before{
-      left: 35%;
-  }
-  .our-team .title:after{
-      right: 35%;
-  }
-  div .logo{
-      visibility: hidden !important;
-  }
-  .row{
-      display: list-item !important;
-  }
-
-}
-
-@media only screen and (max-width: 767px){
-  .our-team .team-content:before,
-  .our-team .team-content:after{
-      height: 75px;
-  }
-  .our-team .team-content:before{
-      transform: rotate(8deg);
-  }
-  .our-team .team-content:after{
-      transform: rotate(-8deg);
-  }
-  .our-team .title:before,
-  .our-team .title:after{
-      width: 10px;
-      top: -78px;
-      height: 102px;
-  }
-  .our-team .title:before{
-      left: 42.5%;
-      transform: rotate(-82deg);
-  }
-  .our-team .title:after{
-      right: 42.5%;
-      transform: rotate(82deg);
-  }
-}
-@media only screen and (max-width: 480px){
-  .our-team .title:before,
-  .our-team .title:after{
-      top: -83px;
-  }
-} */
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-</style>
-
 </head>
+
 <body>
-
     <div class="wrapper">
-                <div class="logo">RANDOMIZE();</div>
-                <div class="nav">
-                    <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li>Team</li>
-                            <li>Events</li>
-                            <li>Gallery</li>
-                    </ul>
-                </div>
-    </div>
-
-
-    <div class="container-fluid">
-        <div class="title">
-            <h1>Our team</h1>
-        <!-- </div> -->
-        <div class="row">
-
-            <div class="col-md-4 col-sm-4 col-lg-4">
-                <div class="our-team">
-                    <img src="images/shlok.jpg" alt="">
-                    <div class="team-content">
-                        <h3 class="title">Son</h3>
-                        <span class="post">web developer</span>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="col-md-4 col-sm-6 col-lg-4">
-                <div class="our-team">
-                    <img src="images/ankit.jpg" alt="">
-                    <div class="team-content">
-                        <h3 class="title">Dad</h3>
-                        <span class="post">Web Designer</span>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-lg-4">
-                <div class="our-team">
-                    <img src="images/vaibhav.jpg" alt="">
-                    <div class="team-content">
-                        <h3 class="title">Dad</h3>
-                        <span class="post">Web Designer</span>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-lg-4">
-                <div class="our-team">
-                    <img src="images/ankit.jpg" alt="">
-                    <div class="team-content">
-                        <h3 class="title">Dad</h3>
-                        <span class="post">Web Designer</span>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-lg-4">
-                <div class="our-team">
-                    <img src="images/ankit.jpg" alt="">
-                    <div class="team-content">
-                        <h3 class="title">Dad</h3>
-                        <span class="post">Web Designer</span>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+        <div class="logo">RANDOMIZE();</div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Team</li>
+                <li>Events</li>
+                <li>Gallery</li>
+            </ul>
         </div>
     </div>
-  </div>
+
+
+    <div class="container">
+        <div class="title">
+            <h1>Our team</h1>
+        </div>
+
+        <div class="row1">
+            <img src="images/tanishk.jpg" alt="">
+                <!-- <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                </ul> -->
+            <img src="images/prerit.jpg" alt="">
+                <!-- <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                </ul> -->
+            <img src="images/ankit.jpg" alt="">
+                <!-- <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                </ul> -->
+        </div>
+
+        <div class="row2">
+            <img src="images/vaibhav.jpg" alt="">
+                <!-- <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                </ul> -->
+            <img src="images/shlok.jpg" alt="">
+                <!-- <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                </ul> -->
+        </div>
+    </div>
+
 </body>
 </html>
